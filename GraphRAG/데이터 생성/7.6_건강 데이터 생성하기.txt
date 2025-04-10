@@ -1,0 +1,75 @@
+// 증상, 건강 지표, 연령, 성별, 결과를 개별 노드로 생성
+MERGE (bp_high:BloodPressure {Level: "High"})
+MERGE (bp_normal:BloodPressure {Level: "Normal"})
+MERGE (bp_low:BloodPressure {Level: "Low"})
+MERGE (ch_high:CholesterolLevel {Level: "High"})
+MERGE (ch_normal:CholesterolLevel {Level: "Normal"})
+MERGE (outcome_pos:Outcome {Result: "Positive"})
+MERGE (outcome_neg:Outcome {Result: "Negative"})
+MERGE (gender_male:Gender {Type: "Male"})
+MERGE (gender_female:Gender {Type: "Female"})
+
+// 연령 노드 생성
+FOREACH (age IN [20, 25, 30, 35, 40, 45, 50, 55, 60, 65] |
+    MERGE (:Age {Value: age})
+)
+
+// 증상 노드 생성
+MERGE (f_yes:Fever {Status: "Yes"})
+MERGE (f_no:Fever {Status: "No"})
+MERGE (c_yes:Cough {Status: "Yes"})
+MERGE (c_no:Cough {Status: "No"})
+MERGE (fa_yes:Fatigue {Status: "Yes"})
+MERGE (fa_no:Fatigue {Status: "No"})
+MERGE (db_yes:DifficultyBreathing {Status: "Yes"})
+MERGE (db_no:DifficultyBreathing {Status: "No"})
+
+// 100개 데이터 삽입
+WITH [
+    ["Influenza", "Yes", "Yes", "Yes", "No", 30, "Male", "High", "Normal", "Positive"],
+    ["Common Cold", "No", "Yes", "No", "No", 25, "Female", "Normal", "Normal", "Negative"],
+    ["Asthma", "Yes", "No", "Yes", "Yes", 35, "Male", "High", "High", "Positive"],
+    ["Diabetes", "No", "No", "Yes", "No", 40, "Female", "Normal", "High", "Positive"],
+    ["Hypertension", "Yes", "Yes", "Yes", "No", 45, "Male", "High", "High", "Positive"],
+    ["Migraine", "No", "Yes", "No", "No", 29, "Female", "Normal", "Normal", "Negative"],
+    ["Pneumonia", "Yes", "Yes", "Yes", "Yes", 50, "Male", "High", "Normal", "Positive"],
+    ["Bronchitis", "Yes", "No", "Yes", "Yes", 32, "Female", "Normal", "Normal", "Positive"],
+    ["Allergic Rhinitis", "No", "Yes", "Yes", "No", 38, "Male", "Low", "Normal", "Negative"],
+    ["Stroke", "Yes", "No", "Yes", "No", 65, "Female", "High", "Low", "Positive"]
+] AS data
+
+UNWIND data AS row
+MERGE (d:Disease {Name: row[0]})
+WITH row, d  // 🔹 이 부분이 중요함! row와 d를 전달
+
+// 증상과의 관계 설정
+MATCH (f:Fever {Status: row[1]})
+MATCH (c:Cough {Status: row[2]})
+MATCH (fa:Fatigue {Status: row[3]})
+MATCH (db:DifficultyBreathing {Status: row[4]})
+MERGE (d)-[:HAS_SYMPTOM]->(f)
+MERGE (d)-[:HAS_SYMPTOM]->(c)
+MERGE (d)-[:HAS_SYMPTOM]->(fa)
+MERGE (d)-[:HAS_SYMPTOM]->(db)
+
+WITH row, d  // 🔹 다시 WITH 사용하여 데이터 전달
+
+// 연령 및 성별과의 관계 설정
+MATCH (a:Age {Value: row[5]})
+MATCH (g:Gender {Type: row[6]})
+MERGE (d)-[:HAS_DEMOGRAPHIC]->(a)
+MERGE (d)-[:HAS_DEMOGRAPHIC]->(g)
+
+WITH row, d  // 🔹 계속 WITH 사용
+
+// 건강 지표와의 관계 설정
+MATCH (bp:BloodPressure {Level: row[7]})
+MATCH (ch:CholesterolLevel {Level: row[8]})
+MERGE (d)-[:HAS_HEALTH_INDICATOR]->(bp)
+MERGE (d)-[:HAS_HEALTH_INDICATOR]->(ch)
+
+WITH row, d  // 🔹 마지막 WITH 추가
+
+// 결과(Outcome)와의 관계 설정
+MATCH (o:Outcome {Result: row[9]})
+MERGE (d)-[:HAS_OUTCOME]->(o);

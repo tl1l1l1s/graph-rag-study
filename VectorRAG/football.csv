@@ -1,0 +1,91 @@
+sofifa_id,short_name,age,dob,height_cm,weight_kg,nationality,club_name,league_name,overall,potential,value_eur,wage_eur,player_positions,preferred_foot
+158023,L. Messi,33,1987-06-24,170,72,Argentina,FC Barcelona,Spain Primera Division,93,93,67500000,560000,"RW, ST, CF",Left
+20801,Cristiano Ronaldo,35,1985-02-05,187,83,Portugal,Juventus,Italian Serie A,92,92,46000000,220000,"ST, LW",Right
+188545,R. Lewandowski,31,1988-08-21,184,80,Poland,FC Bayern München,German 1. Bundesliga,91,91,80000000,240000,ST,Right
+190871,Neymar Jr,28,1992-02-05,175,68,Brazil,Paris Saint-Germain,French Ligue 1,91,91,90000000,270000,"LW, CAM",Right
+192985,K. De Bruyne,29,1991-06-28,181,70,Belgium,Manchester City,English Premier League,91,91,87000000,370000,"CAM, CM",Right
+192448,M. ter Stegen,28,1992-04-30,187,85,Germany,FC Barcelona,Spain Primera Division,90,93,69500000,260000,GK,Right
+203376,V. van Dijk,28,1991-07-08,193,92,Netherlands,Liverpool,English Premier League,90,91,75500000,210000,CB,Right
+212831,Alisson,27,1992-10-02,191,91,Brazil,Liverpool,English Premier League,90,91,62500000,160000,GK,Right
+209331,M. Salah,28,1992-06-15,175,71,Egypt,Liverpool,English Premier League,90,90,78000000,250000,RW,Left
+192119,T. Courtois,28,1992-05-11,199,96,Belgium,Real Madrid,Spain Primera Division,89,90,56000000,250000,GK,Left
+155862,Sergio Ramos,34,1986-03-30,184,82,Spain,Real Madrid,Spain Primera Division,89,89,24500000,300000,CB,Right
+165153,K. Benzema,32,1987-12-19,185,81,France,Real Madrid,Spain Primera Division,89,89,53000000,350000,"CF, ST",Right
+167495,M. Neuer,34,1986-03-27,193,92,Germany,FC Bayern München,German 1. Bundesliga,89,89,29000000,125000,GK,Right
+200145,Casemiro,28,1992-02-23,185,84,Brazil,Real Madrid,Spain Primera Division,89,89,59500000,310000,CDM,Right
+210257,Ederson,26,1993-08-17,188,86,Brazil,Manchester City,English Premier League,88,91,53500000,195000,GK,Left
+202652,R. Sterling,25,1994-12-08,170,69,England,Manchester City,English Premier League,88,90,72500000,270000,"LW, RW",Right
+212622,J. Kimmich,25,1995-02-08,176,73,Germany,FC Bayern München,German 1. Bundesliga,88,90,65000000,145000,"CDM, RB",Right
+202126,H. Kane,26,1993-07-28,188,89,England,Tottenham Hotspur,English Premier League,88,89,71000000,220000,ST,Right
+211110,P. Dybala,26,1993-11-15,177,75,Argentina,Juventus,Italian Serie A,88,89,71000000,190000,"CF, CAM",Left
+182521,T. Kroos,30,1990-01-04,183,76,Germany,Real Madrid,Spain Primera Division,88,88,55000000,310000,CM,Right
+183277,E. Hazard,29,1991-01-07,175,74,Belgium,Real Madrid,Spain Primera Division,88,88,58000000,350000,"LW, ST",Right
+201024,K. Koulibaly,29,1991-06-20,187,89,Senegal,Napoli,Italian Serie A,88,88,50000000,140000,CB,Right
+233049,J. Sancho,20,2000-03-25,180,76,England,Borussia Dortmund,German 1. Bundesliga,87,93,69500000,82000,"RM, LM, CAM",Right
+231281,T. Alexander-Arnold,21,1998-10-07,180,69,England,Liverpool,English Premier League,87,92,60000000,110000,RB,Right
+212198,Bruno Fernandes,25,1994-09-08,179,69,Portugal,Manchester United,English Premier League,87,90,63000000,195000,"CAM, CM",Right
+212218,A. Laporte,26,1994-05-27,189,85,France,Manchester City,English Premier League,87,90,56000000,200000,CB,Left
+209499,Fabinho,26,1993-10-23,188,78,Brazil,Liverpool,English Premier League,87,89,54500000,155000,CDM,Right
+216267,A. Robertson,26,1994-03-11,178,64,Scotland,Liverpool,English Premier League,87,89,53000000,155000,LB,Left
+218667,Bernardo Silva,25,1994-08-10,173,64,Portugal,Manchester City,English Premier League,87,88,60000000,230000,"RW, CAM, CM",Left
+138956,G. Chiellini,35,1984-08-14,187,85,Italy,Juventus,Italian Serie A,87,87,15500000,94000,CB,Left
+167948,H. Lloris,33,1986-12-26,188,82,France,Tottenham Hotspur,English Premier League,87,87,27000000,125000,GK,Left
+188567,P. Aubameyang,31,1989-06-18,187,80,Gabon,Arsenal,English Premier League,87,87,45000000,170000,"ST, LW",Right
+189511,Sergio Busquets,31,1988-07-16,189,76,Spain,FC Barcelona,Spain Primera Division,87,87,38000000,240000,CDM,Right
+192387,C. Immobile,30,1990-02-20,185,85,Italy,Lazio,Italian Serie A,87,87,48500000,125000,ST,Right
+193041,K. Navas,33,1986-12-15,185,80,Costa Rica,Paris Saint-Germain,French Ligue 1,87,87,27000000,110000,GK,Right
+194765,A. Griezmann,29,1991-03-21,176,73,France,FC Barcelona,Spain Primera Division,87,87,50500000,290000,"ST, CF, LW",Left
+201942,Roberto Firmino,28,1991-10-02,181,76,Brazil,Liverpool,English Premier League,87,87,52000000,190000,CF,Right
+201535,R. Varane,27,1993-04-25,191,81,France,Real Madrid,Spain Primera Division,86,88,46500000,220000,CB,Right
+195864,P. Pogba,27,1993-03-15,191,84,France,Manchester United,English Premier League,86,87,50000000,190000,"CM, CDM",Right
+199556,M. Verratti,27,1992-11-05,165,60,Italy,Paris Saint-Germain,French Ligue 1,86,87,50000000,135000,"CM, CDM",Right
+168542,David Silva,34,1986-01-08,173,67,Spain,Real Sociedad,Spain Primera Division,86,86,22500000,58000,"CAM, CM",Left
+177683,Y. Sommer,31,1988-12-17,183,79,Switzerland,Borussia Mönchengladbach,German 1. Bundesliga,86,86,28500000,55000,GK,Right
+178603,M. Hummels,31,1988-12-16,191,94,Germany,Borussia Dortmund,German 1. Bundesliga,86,86,33000000,93000,CB,Right
+183711,J. Henderson,30,1990-06-17,182,80,England,Liverpool,English Premier League,86,86,36500000,140000,"CDM, CM",Right
+189332,Jordi Alba,31,1989-03-21,170,68,Spain,FC Barcelona,Spain Primera Division,86,86,32000000,220000,LB,Left
+189596,T. Müller,30,1989-09-13,186,75,Germany,FC Bayern München,German 1. Bundesliga,86,86,42000000,130000,"CAM, RM, RW",Right
+193080,De Gea,29,1990-11-07,192,82,Spain,Manchester United,English Premier League,86,86,31500000,150000,GK,Right
+204963,Carvajal,28,1992-01-11,173,73,Spain,Real Madrid,Spain Primera Division,86,86,38000000,230000,RB,Right
+208830,J. Vardy,33,1987-01-11,179,74,England,Leicester City,English Premier League,86,86,28000000,160000,ST,Right
+235790,K. Havertz,21,1999-06-11,188,83,Germany,Chelsea,English Premier League,85,93,57000000,105000,"CAM, RM, CF",Left
+230621,G. Donnarumma,21,1999-02-25,196,90,Italy,Milan,Italian Serie A,85,92,41500000,34000,GK,Right
+235243,M. de Ligt,20,1999-08-12,189,89,Netherlands,Juventus,Italian Serie A,85,92,49500000,80000,CB,Right
+231677,M. Rashford,22,1997-10-31,186,70,England,Manchester United,English Premier League,85,91,53000000,150000,"LM, ST",Right
+228702,F. de Jong,23,1997-05-12,180,74,Netherlands,FC Barcelona,Spain Primera Division,85,90,50500000,190000,CM,Right
+207865,Marquinhos,26,1994-05-14,183,75,Brazil,Paris Saint-Germain,French Ligue 1,85,89,44000000,115000,"CB, CDM",Right
+220440,C. Lenglet,25,1995-06-17,186,81,France,FC Barcelona,Spain Primera Division,85,89,44500000,190000,CB,Left
+232363,M. Škriniar,25,1995-02-11,188,80,Slovakia,Inter,Italian Serie A,85,89,44500000,130000,CB,Right
+202556,M. Depay,26,1994-02-13,176,78,Netherlands,Olympique Lyonnais,French Ligue 1,85,88,48500000,115000,"CF, LW, CAM",Right
+212188,T. Werner,24,1996-03-06,180,76,Germany,Chelsea,English Premier League,85,88,49500000,135000,ST,Right
+231866,Rodri,24,1996-06-22,191,82,Spain,Manchester City,English Premier League,85,88,44000000,145000,"CDM, CM",Right
+192563,B. Leno,28,1992-03-04,190,82,Germany,Arsenal,English Premier League,85,87,33500000,105000,GK,Right
+206113,S. Gnabry,24,1995-07-14,175,75,Germany,FC Bayern München,German 1. Bundesliga,85,87,47500000,100000,"RM, LM, RW",Right
+210243,Ricardo Pereira,26,1993-10-06,175,70,Portugal,Leicester City,English Premier League,85,87,40500000,120000,RB,Right
+192505,R. Lukaku,27,1993-05-13,191,94,Belgium,Inter,Italian Serie A,85,86,45000000,165000,ST,Left
+198706,Luis Alberto,27,1992-09-28,183,74,Spain,Lazio,Italian Serie A,85,86,44000000,99000,"CAM, CM, CF",Right
+201399,M. Icardi,27,1993-02-19,181,75,Argentina,Paris Saint-Germain,French Ligue 1,85,86,45000000,135000,ST,Right
+208670,H. Ziyech,27,1993-03-19,181,65,Morocco,Chelsea,English Premier League,85,86,44000000,140000,"CAM, RW",Left
+164240,Thiago Silva,35,1984-09-22,183,79,Brazil,Chelsea,English Premier League,85,85,11500000,93000,CB,Right
+175943,D. Mertens,33,1987-05-06,169,61,Belgium,Napoli,Italian Serie A,85,85,24000000,115000,"CF, ST",Right
+181291,G. Wijnaldum,29,1990-11-11,175,69,Netherlands,Liverpool,English Premier League,85,85,37000000,150000,CM,Right
+184087,T. Alderweireld,31,1989-03-02,186,81,Belgium,Tottenham Hotspur,English Premier League,85,85,28500000,130000,CB,Right
+184344,L. Bonucci,33,1987-05-01,190,85,Italy,Juventus,Italian Serie A,85,85,18000000,110000,CB,Right
+185122,P. Gulácsi,30,1990-05-06,191,86,Hungary,RB Leipzig,German 1. Bundesliga,85,85,26000000,65000,GK,Right
+188350,M. Reus,31,1989-05-31,180,71,Germany,Borussia Dortmund,German 1. Bundesliga,85,85,34000000,94000,"CAM, CF",Right
+188377,K. Walker,30,1990-05-28,183,70,England,Manchester City,English Premier League,85,85,30500000,170000,RB,Right
+189509,Thiago,29,1991-04-11,174,70,Spain,Liverpool,English Premier League,85,85,37000000,150000,"CM, CDM",Right
+189513,Parejo,31,1989-04-16,182,74,Spain,Villarreal CF,Spain Primera Division,85,85,33000000,59000,CM,Right
+190460,C. Eriksen,28,1992-02-14,181,76,Denmark,Inter,Italian Serie A,85,85,39000000,155000,"CAM, CM, RM",Right
+191043,Alex Sandro,29,1991-01-26,180,80,Brazil,Juventus,Italian Serie A,85,85,31500000,120000,"LB, LM",Left
+198219,L. Insigne,29,1991-06-04,163,59,Italy,Napoli,Italian Serie A,85,85,37500000,120000,"LW, CF",Right
+204485,R. Mahrez,29,1991-02-21,179,67,Algeria,Manchester City,English Premier League,85,85,37500000,210000,"RW, RM",Left
+239085,E. Haaland,19,2000-07-21,194,88,Norway,Borussia Dortmund,German 1. Bundesliga,84,92,45000000,56000,ST,Left
+230142,Oyarzabal,23,1997-04-21,181,79,Spain,Real Sociedad,Spain Primera Division,84,90,42500000,47000,"LW, RW",Left
+212190,N. Süle,24,1995-09-03,195,97,Germany,FC Bayern München,German 1. Bundesliga,84,89,37500000,84000,CB,Right
+230658,Arthur,23,1996-08-12,171,73,Brazil,Juventus,Italian Serie A,84,89,41000000,98000,CM,Right
+209658,L. Goretzka,25,1995-02-06,189,76,Germany,FC Bayern München,German 1. Bundesliga,84,88,39500000,105000,"CM, CDM",Right
+210035,Grimaldo,24,1995-09-20,171,69,Spain,SL Benfica,Portuguese Liga ZON SAGRES,84,88,35500000,20000,LB,Left
+211300,A. Martial,24,1995-12-05,184,76,France,Manchester United,English Premier League,84,88,41000000,155000,ST,Right
+212194,J. Brandt,24,1996-05-02,185,83,Germany,Borussia Dortmund,German 1. Bundesliga,84,88,40500000,75000,"CAM, CM",Right
+213345,K. Coman,24,1996-06-13,179,75,France,FC Bayern München,German 1. Bundesliga,84,88,40500000,94000,"LM, RM, LW",Right

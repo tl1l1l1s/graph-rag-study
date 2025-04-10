@@ -1,0 +1,29 @@
+// 30개의 축구팀 이름
+WITH ['Real Madrid', 'Barcelona', 'Bayern Munich', 'Paris Saint-Germain', 'Manchester United',
+      'Chelsea', 'Juventus', 'AC Milan', 'Arsenal', 'Liverpool', 'Tottenham Hotspur', 'Atletico Madrid',
+      'Borussia Dortmund', 'Inter Milan', 'Lyon', 'Roma', 'Manchester City', 'Bayer Leverkusen', 'Sevilla', 
+      'Napoli', 'RB Leipzig', 'Benfica', 'Porto', 'Ajax', 'Shakhtar Donetsk', 'Zenit Saint Petersburg',
+      'Olympique Marseille', 'Valencia', 'Everton', 'Wolverhampton Wanderers'] AS teams
+
+UNWIND teams AS teamName
+// 팀 노드 생성
+CREATE (t:Team {Name: teamName})
+
+// 30명의 실제 축구선수 이름
+WITH t, teams
+UNWIND ['Karim Benzema', 'Lionel Messi', 'Robert Lewandowski', 'Kylian Mbappé', 'Cristiano Ronaldo', 
+        'Neymar', 'Sergio Ramos', 'Mohamed Salah', 'Eden Hazard', 'Gerard Piqué', 'Luka Modric', 
+        'Virgil van Dijk', 'Kevin De Bruyne', 'Harry Kane', 'Raheem Sterling', 'Gareth Bale', 'Paul Pogba', 
+        'Sadio Mané', 'Thiago Silva', 'Marco Verratti', 'Ciro Immobile', 'Jan Oblak', 'Hugo Lloris', 
+        'Son Heung-min', 'Zlatan Ibrahimović', 'Erling Haaland', 'Phil Foden', 'Frenkie de Jong', 'Joshua Kimmich'] AS playerName
+// 선수 노드 생성
+CREATE (p:Player {Name: playerName})
+
+// Relationship: Part_of (Player -> Team) 생성
+CREATE (p)-[:Part_of]->(t)
+
+// 급여(Wage) 노드 생성 및 연결
+WITH p
+CREATE (w:Wage {Euro: 50000 + (rand() * 100000)})  // 임의의 급여 값
+// Relationship: Paid (Player -> Wage) 생성
+CREATE (p)-[:Paid]->(w)

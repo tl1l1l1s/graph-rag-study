@@ -1,0 +1,55 @@
+// 자동차 제조사(Manufacturer) 노드 생성 (중복 방지)
+WITH ['현대', '기아', '벤츠', 'BMW', '아우디', '토요타', '포드', '페라리', '테슬라', '람보르기니'] AS manufacturers
+
+UNWIND manufacturers AS manufacturerName
+MERGE (m:Manufacturer {Name: manufacturerName}) // 중복 방지
+
+// 자동차 브랜드(Brand)와 평균 가격(Price) 생성 (중복 방지)
+WITH [
+  {brand: '제네시스', manufacturer: '현대', price: 70000000},
+  {brand: '쏘나타', manufacturer: '현대', price: 35000000},
+  {brand: '아반떼', manufacturer: '현대', price: 25000000},
+  {brand: '그랜저', manufacturer: '현대', price: 50000000},
+  {brand: 'K5', manufacturer: '기아', price: 32000000},
+  {brand: 'K7', manufacturer: '기아', price: 45000000},
+  {brand: 'K9', manufacturer: '기아', price: 65000000},
+  {brand: '모닝', manufacturer: '기아', price: 18000000},
+  {brand: 'C-Class', manufacturer: '벤츠', price: 75000000},
+  {brand: 'E-Class', manufacturer: '벤츠', price: 90000000},
+  {brand: 'S-Class', manufacturer: '벤츠', price: 150000000},
+  {brand: 'GLC', manufacturer: '벤츠', price: 80000000},
+  {brand: '3 Series', manufacturer: 'BMW', price: 60000000},
+  {brand: '5 Series', manufacturer: 'BMW', price: 85000000},
+  {brand: '7 Series', manufacturer: 'BMW', price: 130000000},
+  {brand: 'X5', manufacturer: 'BMW', price: 95000000},
+  {brand: 'A3', manufacturer: '아우디', price: 40000000},
+  {brand: 'A4', manufacturer: '아우디', price: 55000000},
+  {brand: 'A6', manufacturer: '아우디', price: 75000000},
+  {brand: 'Q5', manufacturer: '아우디', price: 85000000},
+  {brand: 'Camry', manufacturer: '토요타', price: 40000000},
+  {brand: 'Corolla', manufacturer: '토요타', price: 30000000},
+  {brand: 'Supra', manufacturer: '토요타', price: 80000000},
+  {brand: 'RAV4', manufacturer: '토요타', price: 45000000},
+  {brand: 'Mustang', manufacturer: '포드', price: 90000000},
+  {brand: 'F-150', manufacturer: '포드', price: 60000000},
+  {brand: 'Explorer', manufacturer: '포드', price: 75000000},
+  {brand: 'Escape', manufacturer: '포드', price: 50000000},
+  {brand: '488 GTB', manufacturer: '페라리', price: 400000000},
+  {brand: 'Roma', manufacturer: '페라리', price: 350000000},
+  {brand: 'F8 Tributo', manufacturer: '페라리', price: 450000000},
+  {brand: 'SF90', manufacturer: '페라리', price: 600000000},
+  {brand: 'Model S', manufacturer: '테슬라', price: 110000000},
+  {brand: 'Model 3', manufacturer: '테슬라', price: 60000000},
+  {brand: 'Model X', manufacturer: '테슬라', price: 120000000},
+  {brand: 'Model Y', manufacturer: '테슬라', price: 75000000},
+  {brand: 'Aventador', manufacturer: '람보르기니', price: 500000000},
+  {brand: 'Huracan', manufacturer: '람보르기니', price: 400000000},
+  {brand: 'Urus', manufacturer: '람보르기니', price: 300000000}
+] AS cars
+
+UNWIND cars AS car
+MATCH (m:Manufacturer {Name: car.manufacturer}) // 기존 제조사 찾기
+MERGE (b:Brand {Name: car.brand}) // 중복 방지
+MERGE (p:Price {Amount: car.price}) // 중복 방지
+MERGE (b)-[:HAS_PRICE]->(p) // 브랜드 → 가격 연결
+MERGE (m)-[:PRODUCES]->(b) // 제조사 → 브랜드 연결
